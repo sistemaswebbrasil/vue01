@@ -1,10 +1,16 @@
 <template>
-  <main>
-    <nav-bar></nav-bar>
-                <button class="btn float-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
-                <i class="bi bi-arrow-right-square-fill fs-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></i>
-            </button>
-    <div class="container-fluid overflow-hidden">
+  <!-- <main> -->
+<router-view />
+  <!-- <div class="container-fluid overflow-hidden">
+    <nav-bar />
+    <div class="row vh-100 overflow-auto">
+      <side-bar></side-bar>
+      <router-view />
+
+      <footer-bar></footer-bar>
+    </div>
+  </div> -->
+  <!-- <div class="container-fluid overflow-hidden">
       <div class="row vh-100 overflow-auto">
         <side-bar></side-bar>
         <div class="col d-flex flex-column h-sm-100">
@@ -16,21 +22,22 @@
           <Footer />
         </div>
       </div>
-    </div>
-  </main>
+    </div> -->
+  <!-- </main> -->
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import NavBar from "@/components/Navbar.vue";
+import NavBar from "@/components/NavBar.vue";
 import SideBar from "@/components/SideBar.vue";
-import Footer from "@/components/Footer.vue";
+//import Footer from "@/components/FooterBar.vue";
+import FooterBar from "@/components/FooterBar.vue";
 
 export default defineComponent({
   components: {
-    NavBar,
-    SideBar,
-    Footer,
+    // SideBar,
+    // NavBar,
+    // FooterBar,
   },
 });
 </script>

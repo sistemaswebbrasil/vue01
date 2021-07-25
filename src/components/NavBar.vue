@@ -28,9 +28,18 @@
           <a href="#" class="nav-link link-dark px-2">Sign up</a>
         </li>
       </ul>
-                <button class="btn float-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
-                <i class="bi bi-arrow-right-square-fill fs-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></i>
-            </button>      
+      <button
+        class="btn float-end"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvas"
+        role="button"
+      >
+        <i
+          class="bi bi-arrow-right-square-fill fs-3"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvas"
+        ></i>
+      </button>
     </div>
   </nav>
 </template>
@@ -43,3 +52,9 @@ export default defineComponent({
   name: "NavBar",
 });
 </script>
+
+<style scoped>
+nav {
+  height: 5em;
+}
+</style>

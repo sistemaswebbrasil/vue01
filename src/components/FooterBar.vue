@@ -1,6 +1,6 @@
 <template>
   <footer class="row bg-light py-4 mt-auto">
-    <div class="col">Footer content here...</div>
+    <div class="col">aaFooter content here...</div>
   </footer>
 </template>
 
@@ -8,6 +8,6 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "Footer",
+  name: "FooterBar",
 });
 </script>

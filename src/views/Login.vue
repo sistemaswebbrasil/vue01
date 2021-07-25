@@ -1,18 +1,18 @@
 <template>
-  <DefaultLayout title="Home">
+  <public-layout title="Login">
     <h2>aaaaaaaa</h2>
     <h2>bbbbbbbb</h2>
-  </DefaultLayout>
+  </public-layout>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import DefaultLayout from "@/layouts/Default/DefaultLayout.vue";
+import PublicLayout from "@/layouts/Public/PublicLayout.vue";
 
 export default defineComponent({
   name: "Login",
   components: {
-    DefaultLayout,
+    PublicLayout,
   },
 });
 </script>
